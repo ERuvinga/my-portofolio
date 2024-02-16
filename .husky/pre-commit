@@ -1,0 +1,4 @@
+echo "linting and formatting ..."
+npx lint-staged
+
+echo "Good Codde"
