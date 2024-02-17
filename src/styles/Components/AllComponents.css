@@ -1,139 +1,83 @@
 /* style for All components */
 
 /*
-1. Login and Register Button
+1. NavBar
 */
-.sendDatasBtn {
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 0 8px 0 #e2e8f0;
-
-  padding: 15px 0;
-  font-family: poppinMedium;
-  font-size: 1.1em;
-  color: white;
-  background-color: #00a7da;
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 12px 0;
+  background-color: #fff;
+  box-shadow: 0 0 8px #e2e8f0;
 }
 
-.sendDatasBtn:hover {
-  cursor: pointer;
+.navigation .logo {
+  width: 50px;
+  height: 50px;
 }
 
-/*
-2. line -Or-
-*/
-
-.ContainerLine {
+.navigation .navList {
+  width: 22%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.ContainerLine .line {
-  height: 1px;
-  width: 35%;
-  background-color: #e2e8f0;
-}
-
-.ContainerLine .TextEnterLine {
-  color: #64748b;
-  font-size: 0.83em;
-  text-align: center;
-}
-
-/*
-3. Auth buttons
-*/
-
-.GFAuthBtn {
+.navList .itemList {
+  color: #211313;
+  font-size: 0.9em;
+  border-radius: 35px;
+  padding: 2px 22px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 7px;
-
-  width: 47%;
-  padding: 15px 0;
-  border: 1px solid #e2e8f0;
-  box-shadow: 0 0 4px #e2e8f0;
-  border-radius: 8px;
-
-  color: #455a64;
-}
-.GFAuthBtn:hover {
-  cursor: pointer;
-}
-.GFAuthBtn img {
-  width: 25px;
-  height: 25px;
+  transition: all 0.5s;
 }
 
-.GFAuthBtn span {
-  font-size: 1em;
-  font-weight: bold;
+.navList .itemList:hover {
+  background-color: #edf1f7;
+  color: #7a7979;
 }
 
-/*
-4. Back to Home button
-*/
-.containerBtnToHome {
-  width: 100%;
+.navList .itemListselected {
+  background-color: rgba(253, 89, 86, 0.1);
+  color: rgba(253, 89, 86, 1);
+  font-size: 0.9em;
+  border-radius: 35px;
+  padding: 2px 22px;
   display: flex;
   align-items: center;
+  transition: all 0.5s;
 }
-.containerBtnToHome .BtnToHome {
-  background-color: #fff;
-  color: #64748b;
-  padding: 8px 25px;
-  margin-bottom: 10px;
 
+.githubLink {
+  color: #fff;
+  font-size: 0.9em;
+  padding: 6px 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  background-color: #211313;
+  gap: 6px;
+  border-radius: 2px;
   box-shadow: 0 0 8px #e2e8f0;
-  border-radius: 5px;
 }
-.containerBtnToHome .BtnToHome .Icone {
-  width: 20px;
-  color: #64748b;
+
+.githubLink .IconeGit {
+  width: 30px;
+  height: 30px;
 }
+
+/*
+2. line
+*/
 
 /*Media querry*/
 
 @media screen and (min-width: 950px) {
-  .containerBtnToHome {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 500px) {
-  .GFAuthBtn {
-    gap: 5px;
-
-    width: 47%;
-    padding: 13px 0;
-    border-radius: 5px;
-  }
-  .GFAuthBtn img {
-    width: 18px;
-    height: 18px;
-  }
-
-  .GFAuthBtn span {
-    font-size: 0.8em;
-  }
-  .ContainerLine .TextEnterLine {
-    font-size: 0.8em;
-  }
-  .ContainerLine .line {
-    height: 1px;
-    width: 30%;
-    background-color: #e2e8f0;
-  }
-  .sendDatasBtn {
-    padding: 10px 0;
-    font-size: 0.9em;
-    border-radius: 5px;
-  }
 }
 
 @media screen and (max-width: 330px) {
