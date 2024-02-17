@@ -42,7 +42,7 @@
 
 .navList .itemListselected {
   background-color: rgba(253, 89, 86, 0.1);
-  color: rgba(253, 89, 86, 1);
+  color: rgb(253, 89, 86);
   font-size: 0.9em;
   border-radius: 35px;
   padding: 2px 22px;

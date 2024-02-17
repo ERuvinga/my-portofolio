@@ -6,6 +6,7 @@ import { useRecoilState } from 'recoil';
 
 //atoms
 import { itemSelected } from '@/state/NavDatas';
+import { useEffect } from 'react';
 
 const datasNav = [
   {
@@ -29,10 +30,15 @@ const datasNav = [
 const NavBar = () => {
   const [itemSelctedValue, setItemSelectedValue] = useRecoilState(itemSelected);
 
+  useEffect(() => {
+    setItemSelectedValue(0);
+  }, []);
+
   //updated itemSelected function
   const itemUpdated = (itemValue: number) => {
     setItemSelectedValue(itemValue);
   };
+
   return (
     <nav className="navigation">
       <Image
